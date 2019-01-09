@@ -1,0 +1,29 @@
+{
+  "name": "speed",
+  "version": "1.0.0",
+  "description": "to copy or move files to the server",
+  "main": "main.js",
+  "author": "Sivaji PR",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.0",
+    "electron-builder": "^20.38.4",
+    "electron-windows-installer": "^1.7.8",
+    "electron-winstaller": "^2.7.0"
+  },
+  "build": {
+    "appId": "12345",
+    "mac": {
+      "category": "file_upload"
+    },
+    "nsis": {
+      "installerIcon": "build/icon_4.ico"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  }
+}
